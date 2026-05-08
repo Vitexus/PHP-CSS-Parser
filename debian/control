@@ -1,0 +1,18 @@
+Source: php-vitexus-php-css-parser
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13), jq
+Standards-Version: 4.6.2
+Homepage: https://github.com/sabberworm/PHP-CSS-Parser
+Vcs-Git: https://github.com/Vitexus/PHP-CSS-Parser.git
+Rules-Requires-Root: no
+
+Package: php-vitexus-php-css-parser
+Architecture: all
+Depends: ${misc:Depends}, php-cli | php, php-mbstring
+Description: PHP CSS Parser - read and manipulate CSS stylesheets
+ A parser for CSS files written in PHP. It can read CSS input from a string
+ or file, build an object model of the CSS document, and output the modified
+ CSS. Supports CSS3 and handles parsing of selectors, rules, values,
+ at-rules and more.
