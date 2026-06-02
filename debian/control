@@ -1,4 +1,4 @@
-Source: php-vitexus-php-css-parser
+Source: php-sabberworm-php-css-parser
 Section: php
 Priority: optional
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
@@ -8,7 +8,7 @@ Homepage: https://github.com/sabberworm/PHP-CSS-Parser
 Vcs-Git: https://github.com/Vitexus/PHP-CSS-Parser.git
 Rules-Requires-Root: no
 
-Package: php-vitexus-php-css-parser
+Package: php-sabberworm-php-css-parser
 Architecture: all
 Depends: ${misc:Depends}, php-cli | php, php-mbstring
 Description: PHP CSS Parser - read and manipulate CSS stylesheets

@@ -6,8 +6,8 @@ PKG_SOURCE  := $(shell jq -r '.name' composer.json)
 	dh $@
 
 override_dh_install:
-	mkdir -p debian/php-vitexus-php-css-parser/usr/share/php/Sabberworm/CSS
-	cp -r src/. debian/php-vitexus-php-css-parser/usr/share/php/Sabberworm/CSS/
-	install -m 644 debian/autoload.php debian/php-vitexus-php-css-parser/usr/share/php/Sabberworm/CSS/autoload.php
-	sed -i "s|'unknown'|'$(PKG_SOURCE)'|" debian/php-vitexus-php-css-parser/usr/share/php/Sabberworm/CSS/autoload.php
-	sed -i "s|'0.0.0'|'$(PKG_VERSION)'|" debian/php-vitexus-php-css-parser/usr/share/php/Sabberworm/CSS/autoload.php
+	mkdir -p debian/php-sabberworm-php-css-parser/usr/share/php/Sabberworm/CSS
+	cp -r src/. debian/php-sabberworm-php-css-parser/usr/share/php/Sabberworm/CSS/
+	install -m 644 debian/autoload.php debian/php-sabberworm-php-css-parser/usr/share/php/Sabberworm/CSS/autoload.php
+	sed -i "s|'unknown'|'$(PKG_SOURCE)'|" debian/php-sabberworm-php-css-parser/usr/share/php/Sabberworm/CSS/autoload.php
+	sed -i "s|'0.0.0'|'$(PKG_VERSION)'|" debian/php-sabberworm-php-css-parser/usr/share/php/Sabberworm/CSS/autoload.php
